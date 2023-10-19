@@ -1,3 +1,6 @@
 # Rasterio-example
-1. Crop a map (tif format) using shapefile, then comparing between the two images
-2. Download specific bands of Sentinel-2 satellite image online and calculate different vegetative indices then save the calculated indices as geotiff
+1. Crop a map (tif format) using shapefile, then comparing between the two images (rasterio_example.ipynb).
+2. Download specific bands of Sentinel-2 satellite image online and calculate different vegetative indices then save the calculated indices as geotiff (veg_indices_sentinel2_api.ipynb).
+3. Download range of date for specific bands of Sentinel-2 satellite image online and calculate different vegetative indices then save the calculated indices as geotiff each date in a seperate folder (veg_indices_sentinel2.py).
+4. Mask the saved geotiff images with a vector file of the same location. The vector file has many polygons that repersented different classes such as agricultural land, buildings, water bodies and roads. Convert the vector file to raster one (geotiff image) as well with the class id (Masked_geotif).
+5. Mask all the saved geotiff images depending on the satellite image date with a vector file of the same location. Each date will be saved in a folder with the date value. The vector file has many polygons that repersented different classes such as agricultural land, buildings, water bodies and roads. Convert the vector file to raster one (geotiff image) as well with the class id (masked_geotif_vector_file.py).
